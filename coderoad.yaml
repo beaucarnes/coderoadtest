@@ -1,0 +1,36 @@
+version: '0.1.0'
+config:
+  testRunner:
+    command: npm run programmatic-test
+    args:
+      filter: --grep
+      tap: --reporter=mocha-tap-reporter
+  repo: 
+    uri: https://github.com/beaucarnes/coderoadtest
+    branch: v0.1.0
+  dependencies:
+    - name: node
+      version: '>=10'
+levels:
+  - id: L10
+    steps:
+      - id: L10S1
+        setup:
+          commands:
+            - npm install
+          files:
+            - package.json
+        solution:
+          files:
+            - package.json
+  - id: L20
+    steps:
+      - id: L20S1
+        setup:
+          commands:
+            - npm install
+          files:
+            - package.json
+        solution:
+          files:
+            - package.json
