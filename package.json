@@ -1,0 +1,22 @@
+{
+  "name": "mini-tutorial-1",
+  "version": "0.1.0",
+  "description": "testing-tutorial-1",
+  "keywords": [
+    "freecodecamp"
+  ],
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moT01/mini-tutorial-1.git"
+  },
+  "scripts": {
+    "programmatic-test": "mocha --reporter=mocha-tap-reporter",
+    "start": "node src/server.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "mocha-tap-reporter": "^0.1.3"
+  }
+}
